@@ -15,12 +15,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #dee6e8;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: 'Rubik', Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
