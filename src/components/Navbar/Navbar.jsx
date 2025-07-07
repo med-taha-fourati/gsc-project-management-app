@@ -11,7 +11,7 @@ const Navbar = ({profileName}) => {
     <div className="navbar-items flex items-center space-x-4">
         <Link href="/"><button className="text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Home</button></Link>
         <Link href="/"><button className="text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Projects</button></Link>
-        <Link href="/profile"><button className="text-gray-800 px-4 py-2 rounded hover:bg-gray-300">{profileName ?? "Profile"}</button></Link>
+        <Link href="/profile/taha"><button className="text-gray-800 px-4 py-2 rounded hover:bg-gray-300">{profileName ?? "Profile"}</button></Link>
     </div>
     </div>
   )

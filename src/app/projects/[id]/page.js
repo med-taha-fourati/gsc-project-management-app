@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar/Navbar'
 import {useState} from 'react'
 import Closed from './_components/closed'
 import Graph from './_components/Charts/Graph'
-import FilesCard from './_components/FilesCard/FilesCard';
-import IssueCard from './_components/IssueCard/IssueCard';
+import FilesCard from './_components/Cards/FilesCard';
+import IssueCard from './_components/Cards/IssueCard';
 
 const projectPage = () => {
   const [filesOpen, setFilesOpen] = useState(true);
@@ -35,7 +35,6 @@ const projectPage = () => {
         (
           <>
             <FilesCard />
-            <Graph /> 
           </>
         ) : 
         (
