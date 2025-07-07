@@ -5,6 +5,7 @@ import {useState} from 'react'
 import Closed from './_components/closed'
 import Graph from './_components/Charts/Graph'
 import FilesCard from './_components/FilesCard/FilesCard';
+import IssueCard from './_components/IssueCard/IssueCard';
 
 const projectPage = () => {
   const [filesOpen, setFilesOpen] = useState(true);
@@ -36,7 +37,16 @@ const projectPage = () => {
             <FilesCard />
             <Graph /> 
           </>
-        ) : "" }
+        ) : 
+        (
+          <>
+            <IssueCard open={false}/>
+            <IssueCard open={true} title="Implementing JS"/>
+            <IssueCard open={false} title="Error 0x4432345"/>
+            <IssueCard open={true}/>
+            <IssueCard open={false} />
+          </>
+        ) }
     </div>
     </>
   )
