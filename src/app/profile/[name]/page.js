@@ -20,6 +20,7 @@ const profile = () => {
               <div className="flex justify-end items-center w-full max-w-9/10 mb-8">
                   <button className="bg-transparent border border-blue-500 text-blue-500 px-4 py-2 rounded-lg hover:text-white hover:bg-blue-600 transition duration-300">Edit Profile</button>
               </div>
+              {/* this is a test commit */}
             </div>
 
             <hr className="w-full border border-gray-300"/>
