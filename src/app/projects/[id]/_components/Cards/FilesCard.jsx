@@ -10,7 +10,7 @@ const Files = [
 const FilesCard = () => {
   return (
     <>
-        <div className="bg-white rounded-lg border border-gray-300 p-6 my-3 w-full max-w-9/10 hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white rounded-lg border border-gray-300 p-6 my-3 w-full sm:max-w-9/10 xl:max-w-8/10 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-bold mb-4">Files</h2>
 
             <div className='flex justify-between items-center'>

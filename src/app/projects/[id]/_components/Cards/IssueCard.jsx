@@ -8,7 +8,7 @@ const IssueCard = ({title, description, open}) => {
     const [isOpen, setIsOpen] = useState(open);
   return (
     <>
-        <div className={`bg-white rounded-lg border ${!isOpen ? "border-green-500" : "border-gray-300" } p-6 my-3 w-full max-w-9/10 hover:shadow-xl transition-shadow duration-300`}>
+        <div className={`bg-white rounded-lg border ${!isOpen ? "border-green-500" : "border-gray-300" } p-6 my-3 w-full xl:max-w-7/10 sm:max-w-9/10 hover:shadow-xl transition-shadow duration-300`}>
             <div className="flex items-center justify-between mb-4">
           <h5 className="text-2xl font-bold">{title ?? "Title"}</h5>
           {isOpen ? (
@@ -29,7 +29,9 @@ const IssueCard = ({title, description, open}) => {
                 <Image src={ProfileTemplate} alt="Profile" width={30} height={30} className="rounded-full inline-block mr-2" /><span>lorem ipsum</span>
               </div>
             </div>
-            <textarea className="w-full h-24 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..."></textarea>
+            {open ? <textarea className="w-full h-24 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..."></textarea> : 
+            <textarea className="w-full h-24 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Issue is closed" disabled></textarea>
+            }
             <div className="flex justify-between items-center mt-4">
               {open ? (<div className="flex space-x-2">
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Comment</button>

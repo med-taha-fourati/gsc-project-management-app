@@ -10,7 +10,7 @@ const profile = () => {
     <>
         <Navbar profileName={"Taha Fourati"} />
         
-        <div className="flex flex-col items-center justify-center w-full mt-[4rem] p-[2rem] overflow-scroll">
+        <div className="flex flex-col items-center justify-center w-full mt-[4rem] p-[2rem]">
             <div className="flex flex-row items-center justify-between w-full max-w-9/10 mb-8">
               <div className="flex justify-left items-center w-full max-w-9/10">
                   <Image src={DefaultProfile} alt="Profile" width={100} height={100} className="rounded-full mr-4" />
