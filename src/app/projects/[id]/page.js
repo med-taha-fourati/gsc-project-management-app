@@ -7,7 +7,7 @@ import Graph from './_components/Charts/Graph'
 import FilesCard from './_components/Cards/FilesCard';
 import IssueCard from './_components/Cards/IssueCard';
 
-const projectPage = () => {
+const ProjectPage = () => {
   const [filesOpen, setFilesOpen] = useState(true);
   return (
     <>
@@ -54,4 +54,4 @@ const projectPage = () => {
   )
 }
 
-export default projectPage
+export default ProjectPage

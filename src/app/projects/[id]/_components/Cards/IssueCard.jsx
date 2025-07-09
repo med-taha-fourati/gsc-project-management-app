@@ -32,11 +32,14 @@ const IssueCard = ({title, description, open}) => {
             {open ? <textarea className="w-full h-24 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..."></textarea> : 
             <textarea className="w-full h-24 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Issue is closed" disabled></textarea>
             }
-            <div className="flex justify-between items-center mt-4">
-              {open ? (<div className="flex space-x-2">
+            <div className="flex flex-col justify-between items-center mt-4 md:flex-row sm:flex-row gap-8">
+              {open ? (
+              <div className="flex space-x-2">
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Comment</button>
                 <button className="bg-white text-gray-500 border border-gray-500 px-4 py-2 rounded-lg hover:bg-gray-600 hover:text-white transition duration-300">Comment And Close</button>
-              </div>) : (<div>
+              </div>) : (
+
+              <div className="flex">
                 <button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:cursor-not-allowed" disabled>Issue Closed</button>
               </div>)
               }

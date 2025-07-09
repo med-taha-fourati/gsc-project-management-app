@@ -11,13 +11,13 @@ const profile = () => {
         <Navbar profileName={"Taha Fourati"} />
         
         <div className="flex flex-col items-center justify-center w-full mt-[4rem] p-[2rem]">
-            <div className="flex flex-row items-center justify-between w-full max-w-9/10 mb-8">
+            <div className="flex flex-col md:flex-row sm:flex-row items-center justify-between w-full max-w-9/10 mb-8">
               <div className="flex justify-left items-center w-full max-w-9/10">
                   <Image src={DefaultProfile} alt="Profile" width={100} height={100} className="rounded-full mr-4" />
                   <h1 className="text-4xl font-bold text-gray-800 ml-6">Taha Fourati</h1>
               </div>
 
-              <div className="flex justify-end items-center w-full max-w-9/10 mb-8">
+              <div className="flex justify-center md:justify-end md:my-9 items-center w-full max-w-9/10 mx-8">
                   <button className="bg-transparent border border-blue-500 text-blue-500 px-4 py-2 rounded-lg hover:text-white hover:bg-blue-600 transition duration-300">Edit Profile</button>
               </div>
               {/* this is a test commit */}
