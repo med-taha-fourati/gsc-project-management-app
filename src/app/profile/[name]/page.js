@@ -17,7 +17,7 @@ const profile = () => {
                   <h1 className="text-4xl font-bold text-gray-800 ml-6">Taha Fourati</h1>
               </div>
 
-              <div className="flex justify-center md:justify-end md:my-9 items-center w-full max-w-9/10 mx-8">
+              <div className="flex justify-center md:justify-end md:my-9 items-center w-full max-w-9/10 mx-8 my-3">
                   <button className="bg-transparent border border-blue-500 text-blue-500 px-4 py-2 rounded-lg hover:text-white hover:bg-blue-600 transition duration-300">Edit Profile</button>
               </div>
               {/* this is a test commit */}
@@ -27,7 +27,7 @@ const profile = () => {
 
             <div className="flex flex-col items-center w-full mt-8 md:flex-row md:justify-between md:items-start gap-8 md:max-w-9/10">
                 <Graph />
-                <IssuePercentageCard totalIssues={200} closedIssues={36}/>
+                <IssuePercentageCard totalIssues={200} closedIssues={106}/>
             </div>
         </div>
     </>
