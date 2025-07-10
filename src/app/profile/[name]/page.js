@@ -25,7 +25,7 @@ const profile = () => {
 
             <hr className="w-full border border-gray-300"/>
 
-            <div className="flex flex-col items-center w-full mt-8 md:flex-row md:justify-between md:items-start gap-8 md:max-w-9/10">
+            <div className="flex flex-col items-center w-full mt-8 lg:flex-row lg:justify-between lg:items-start gap-8 sm:max-w-9/10">
                 <Graph />
                 <IssuePercentageCard totalIssues={200} closedIssues={106}/>
             </div>

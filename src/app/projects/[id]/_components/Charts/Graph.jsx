@@ -25,9 +25,9 @@ const mockData = [
 const Graph = ({ data }) => {
   return (
     <>
-      <div className="bg-white rounded-lg border border-gray-300 p-6 my-3 w-full max-w-9/10 hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-white rounded-lg border border-gray-300 p-6 my-3 w-full max-w-9/10 hover:shadow-xl transition-shadow duration-300 overflow-scroll">
         <h2 className="text-2xl font-bold mb-4">Commit Graph in 2025</h2>
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" minWidth={500} height={300}>
           <AreaChart data={data ?? mockData}>
             <defs>
               <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
@@ -35,7 +35,7 @@ const Graph = ({ data }) => {
                 <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
               </linearGradient>
             </defs>
-            <CartesianGrid strokeDasharray="3 3" />
+            <CartesianGrid strokeDasharray="5 5" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
