@@ -26,7 +26,7 @@ const Navbar = ({profileName}) => {
             
        
       </div>
-      <div className={`bg-white ${smOpen ? 'flex' : 'hidden'} flex-col text-gray-800 shadow`}>
+      <div className={`bg-white ${smOpen ? 'flex' : 'hidden'} flex-col text-gray-800 shadow md:hidden`}>
         <Link href="/"><button className="text-gray-800 w-full px-4 text-left py-3 hover:bg-gray-300">Home</button></Link>
           <Link href="/projects"><button className="text-gray-800 px-4 w-full py-3 text-left hover:bg-gray-300">Projects</button></Link>
           <Link href="/profile/taha"><button className="text-gray-800 w-full px-4 py-3 text-left hover:bg-gray-300">{profileName ?? "Profile"}</button></Link>
